@@ -23,9 +23,4 @@ Tips for finding the appropriate coordinates:
 
 
 
-
-<<<<<<< HEAD
 *The data used for our example is from [senseFly](https://www.sensefly.com/education/datasets/?dataset=4944).*
-=======
-The data used for the example is from [senseFly](https://www.sensefly.com/education/datasets/?dataset=4944).
->>>>>>> 52464597db31a7ac3bc1bd10d8352a5c28315547
