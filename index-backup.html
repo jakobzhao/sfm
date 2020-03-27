@@ -48,13 +48,13 @@
 		viewer.setDescription(``);
 		viewer.loadSettingsFromURL();
 
-		// viewer.loadGUI(() => {
-		// 	viewer.setLanguage('en');
-		// 	$("#menu_appearance").next().show();
-		// 	$("#menu_tools").next().show();
-		// 	$("#menu_scene").next().show();
-		// 	viewer.toggleSidebar();
-		// });
+		viewer.loadGUI(() => {
+			viewer.setLanguage('en');
+			$("#menu_appearance").next().show();
+			$("#menu_tools").next().show();
+			$("#menu_scene").next().show();
+			viewer.toggleSidebar();
+		});
 
 		Potree.loadPointCloud("pointclouds/sample/cloud.js", "sample", e => {
 			let pointcloud = e.pointcloud;
