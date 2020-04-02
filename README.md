@@ -65,10 +65,12 @@ PotreeConverter has an option for us to keep the projection of our data so that 
 
 4. Therefore, we add the `--projection` option at the end of the original codes.
 
-    *Original:*
-    `./PotreeConverter.exe C:/data.las -o C:/potree_converted -p pageName`
+   *Original:*  
 
-    *New:*
+   `./PotreeConverter.exe C:/data.las -o C:/potree_converted -p pageName`
+
+   *New:*  
+
    `./PotreeConverter.exe C:/data.las -o C:/potree_converted -p pageName --projection "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs"`
 
 5. After you run the new codes, you will find that the projection has been added and you can see the location in the generated Potree page!
