@@ -19,7 +19,7 @@ Steven Bao and Bo Zhao.
     viewer.scene.view.lookAt(x, y, z);
     ```
     *The first line changes the view angle.*
-    
+
     *The second line changes the center of the viewer.*
 
 Tips for finding the appropriate coordinates:
@@ -33,7 +33,7 @@ Tips for finding the appropriate coordinates:
 
 5. Click on "Camera", then "Properties" will show up.
 
-6. The coordinate under **"position"** is the one for 
+6. The coordinate under **"position"** is the one for
 
    `viewer.scene.view.position.set(x, y, z)`
 
@@ -51,11 +51,9 @@ PotreeConverter has an option for us to keep the projection of our data so that 
 
    `./PotreeConverter.exe C:/data.las -o C:/potree_converted -p pageName`
 
-2. In order to add the projection information to the conversion process, we can use the option `--projection`
+2. In order to add the projection information to the conversion process, we can use the option `--projection`. However, if we want to use this option, we have to provide projection in proj4 format.
 
-   `--projection             Specify projection in proj4 format.`
-
-3. For example, if the projection of our point cloud data is WGS 84, we can use [this](https://spatialreference.org) website to find the projection in proj4 format:
+3. We can use [this](https://spatialreference.org) website to find the projection in proj4 format. For example, if the projection of our point cloud data is WGS 84, we can find the proj4 format for WGS 84.
 
    ![how to find proj4 format](/tutorial_gifs/how-to-find-proj4-format.gif)
 
@@ -65,11 +63,11 @@ PotreeConverter has an option for us to keep the projection of our data so that 
 
 4. Therefore, we add the `--projection` option at the end of the original codes.
 
-   *Original:*  
+   *Original:*
 
    `./PotreeConverter.exe C:/data.las -o C:/potree_converted -p pageName`
 
-   *New:*  
+   *New:*
 
    `./PotreeConverter.exe C:/data.las -o C:/potree_converted -p pageName --projection "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs"`
 
