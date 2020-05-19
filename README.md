@@ -6,6 +6,9 @@ Steven Bao and Bo Zhao.
 [Here](https://github.com/potree/PotreeConverter) is the GitHub page of PotreeConverter, which contains the full usage for PotreeConverter.
 
 
+## Sample data
+
+https://github.com/OpenDroneMap/ODMdata
 
 #### Change Default View in Potree Page
 
